@@ -29,8 +29,10 @@ puts "5 skills created"
     title:"Portfolio title: #{portfolio_item}",
     subtitle:"Luv Star",
     body:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    main_image: "https://place-hold.it/600x400",
-    thumb_image:"https://place-hold.it/350x200"
+    # main_image: "https://place-hold.it/600x400",
+    # thumb_image:"https://place-hold.it/350x200"
+    main_image: "euhna1.jpeg",
+    thumb_image:"euhna1.jpeg"
   )
 end
 
