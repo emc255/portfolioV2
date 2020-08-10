@@ -6,7 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
@@ -45,6 +44,7 @@ puts "5 skills created"
       thumb_image:"https://place-hold.it/350x200"
       # main_image: "app/assets/images/eunha1.jpg",
       # thumb_image:"app/assets/images/eunha1.jpg"
+
     )
   else
     Portfolio.create!(
@@ -57,6 +57,13 @@ puts "5 skills created"
       # thumb_image:"app/assets/images/eunha1.jpg"
     )
   end
+    tech = ['Java', 'React', 'Ruby','C#', 'Javascript', 'Python', 'PHP', 'SQL', 'Swift', 'Scala']
+    
+    3.times do |technology|
+    Portfolio.last.technologies.create!(
+      name: tech[rand(tech.count)]
+    )
+    end
   
 end
 
@@ -74,10 +81,10 @@ end
 
 puts "9 porfolio items created"
 
-3.times do |technology|
-  Portfolio.last.technologies.create!(
-    name: 'Technology #{topic}'
-  )
-end
+# 3.times do |technology|
+#   Portfolio.last.technologies.create!(
+#     name: 'Technology #{topic}'
+#   )
+# end
 
-puts "3 technologies created"
+# puts "3 technologies created"
